@@ -1,0 +1,792 @@
+orb_name: ncd-product_23.6.1-740
+orb_version: 23.10.26.17.01.49
+product_name: NCD-Product
+product_release: NCD_FP5_PP1_generic
+product_release_version: NCD_FP5_PP1_generic-740
+display_name: NCD
+sw_version_item: NCDSW0003C.01
+orbdirectory: ""
+customized_artifacts:
+- product_instance: NCD_FP5_PP1_generic-740
+  version: 23.6.1-740
+  title: NCD
+  generic:
+    layers:
+    - source: ncd_fp5_pp1_generic-740/METADATA/content.txt
+      title: METADATA/content.txt
+      version: 1.0.0
+      type: generic
+      media_type: application/json
+    - source: ncd_fp5_pp1_generic-740/METADATA/product.txt
+      title: METADATA/product.txt
+      version: 23.6.1-740
+      type: generic
+      media_type: application/json
+system_artifacts:
+  generic:
+  - title: NCD
+    version: 23.6.1-740
+    layers:
+    - source: INSTALL_MEDIA/NCD_FP5_Azure_artifacts.zip
+      title: INSTALL_MEDIA/NCD_FP5_Azure_artifacts.zip
+      version: 1.0.0
+      type: generic
+      media_type: application/zip
+    - source: INSTALL_MEDIA/orbtool-23.6.1-476.g68d1db70.tar.gz
+      title: INSTALL_MEDIA/orbtool-23.6.1-476.g68d1db70.tar.gz
+      version: 1.0.0
+      type: generic
+      media_type: application/gzip
+    - source: INSTALL_MEDIA/ncd-fm-man-pages-23.6.1-53.g7729943.zip
+      title: INSTALL_MEDIA/ncd-fm-man-pages-23.6.1-53.g7729943.zip
+      version: 1.0.0
+      type: generic
+      media_type: application/zip
+    - source: INSTALL_MEDIA/ncd-fm-mibs-23.6.1-53.g7729943.zip
+      title: INSTALL_MEDIA/ncd-fm-mibs-23.6.1-53.g7729943.zip
+      version: 1.0.0
+      type: generic
+      media_type: application/zip
+    - source: INSTALL_MEDIA/helper_scripts-23.6.1-53.g7729943.tar.gz
+      title: INSTALL_MEDIA/helper_scripts-23.6.1-53.g7729943.tar.gz
+      version: 1.0.0
+      type: generic
+      media_type: application/gzip
+    - source: INSTALL_MEDIA/build-tools-23.6.1-53.g7729943.tar.gz
+      title: INSTALL_MEDIA/build-tools-23.6.1-53.g7729943.tar.gz
+      version: 1.0.0
+      type: generic
+      media_type: application/gzip
+    - source: INSTALL_MEDIA/backup-3.3.1.tgz
+      title: INSTALL_MEDIA/backup-3.3.1.tgz
+      version: 1.0.0
+      type: generic
+      media_type: application/gzip
+    - source: INSTALL_MEDIA/restore-3.3.1.tgz
+      title: INSTALL_MEDIA/restore-3.3.1.tgz
+      version: 1.0.0
+      type: generic
+      media_type: application/gzip
+    - source: INSTALL_MEDIA/ncd_test_framework_generic_23.6.1-50.gb92a38d4.zip
+      title: INSTALL_MEDIA/ncd_test_framework_generic_23.6.1-50.gb92a38d4.zip
+      version: 1.0.0
+      type: generic
+      media_type: application/zip
+    - source: INSTALL_MEDIA/sample_values_23.6.1-83.g19131f74.zip
+      title: INSTALL_MEDIA/sample_values_23.6.1-83.g19131f74.zip
+      version: 1.0.0
+      type: generic
+      media_type: application/zip
+    source: ""
+  helmchart:
+    cbur:
+      source_local: helmcharts/cbur-1.10.1.tgz
+      source_repo: ""
+      source_chart: ""
+    cbur-crds:
+      source_local: helmcharts/cbur-crds-2.1.0.tgz
+      source_repo: ""
+      source_chart: ""
+    cctf:
+      source_local: helmcharts/cctf-1.8.3.tgz
+      source_repo: ""
+      source_chart: ""
+    cds:
+      source_local: helmcharts/cds-23.6.1-11.gaf36fc4.tgz
+      source_repo: ""
+      source_chart: ""
+    cist-istio:
+      source_local: helmcharts/cist-istio-1.13.0.tgz
+      source_repo: ""
+      source_chart: ""
+    cist-istio-gateway:
+      source_local: helmcharts/cist-istio-gateway-1.13.0.tgz
+      source_repo: ""
+      source_chart: ""
+    cist-istio-init:
+      source_local: helmcharts/cist-istio-init-1.13.0.tgz
+      source_repo: ""
+      source_chart: ""
+    cist-istio-utilities:
+      source_local: helmcharts/cist-istio-utilities-1.13.0.tgz
+      source_repo: ""
+      source_chart: ""
+    csf-cert-manager:
+      source_local: helmcharts/csf-cert-manager-1.12.1.tgz
+      source_repo: ""
+      source_chart: ""
+    helloworld-go:
+      source_local: helmcharts/helloworld-go-1.3.47.tgz
+      source_repo: ""
+      source_chart: ""
+    ncd:
+      source_local: helmcharts/ncd-23.6.1-476.g68d1db70.tgz
+      source_repo: ""
+      source_chart: ""
+    ncd-azure-agent:
+      source_local: helmcharts/ncd-azure-agent-23.6.1-387.g0f02c89.tgz
+      source_repo: ""
+      source_chart: ""
+    ncd-cds-project:
+      source_local: helmcharts/ncd-cds-project-23.6.1-11.gaf36fc4.tgz
+      source_repo: ""
+      source_chart: ""
+    ncd-citm:
+      source_local: helmcharts/ncd-citm-23.6.1-53.g7729943.tgz
+      source_repo: ""
+      source_chart: ""
+    ncd-fluentd:
+      source_local: helmcharts/ncd-fluentd-23.6.1-53.g7729943.tgz
+      source_repo: ""
+      source_chart: ""
+    ncd-gitlab:
+      source_local: helmcharts/ncd-gitlab-23.6.1-21.gc9a614e.tgz
+      source_repo: ""
+      source_chart: ""
+    ncd-harbor:
+      source_local: helmcharts/ncd-harbor-23.6.1-53.g7729943.tgz
+      source_repo: ""
+      source_chart: ""
+    ncd-keycloak:
+      source_local: helmcharts/ncd-keycloak-23.6.1-53.g7729943.tgz
+      source_repo: ""
+      source_chart: ""
+    ncd-logstore:
+      source_local: helmcharts/ncd-logstore-23.6.1-7.gaa981d6.tgz
+      source_repo: ""
+      source_chart: ""
+    ncd-logstream:
+      source_local: helmcharts/ncd-logstream-23.6.1-7.gaa981d6.tgz
+      source_repo: ""
+      source_chart: ""
+    ncd-monitoring:
+      source_local: helmcharts/ncd-monitoring-23.6.1-53.g7729943.tgz
+      source_repo: ""
+      source_chart: ""
+    ncd-redis:
+      source_local: helmcharts/ncd-redis-23.6.1-53.g7729943.tgz
+      source_repo: ""
+      source_chart: ""
+    ncd-registry-cert-installer:
+      source_local: helmcharts/ncd-registry-cert-installer-23.6.1-53.g7729943.tgz
+      source_repo: ""
+      source_chart: ""
+    ncd-telemetry:
+      source_local: helmcharts/ncd-telemetry-23.6.1-53.g7729943.tgz
+      source_repo: ""
+      source_chart: ""
+    ntf-executor:
+      source_local: helmcharts/ntf-executor-23.6.1-1947.tgz
+      source_repo: ""
+      source_chart: ""
+    postgresql-ha:
+      source_local: helmcharts/postgresql-ha-23.6.1-53.g7729943.tgz
+      source_repo: ""
+      source_chart: ""
+  cnfimage:
+    ncd-product/calm/alma.rl8:20230626153641719.2076b3ad:
+      source_local: containerimages/ncd-product/calm/alma.rl8.20230626153641719.2076b3ad.tar
+      source_registry: ""
+      source_image: ""
+      repository: calm/alma.rl8
+      version: 20230626153641719.2076b3ad
+    ncd-product/cbur/cbur-avamar:1.0.1-4216:
+      source_local: containerimages/ncd-product/cbur/cbur-avamar.1.0.1-4216.tar
+      source_registry: ""
+      source_image: ""
+      repository: cbur/cbur-avamar
+      version: 1.0.1-4216
+    ncd-product/cbur/cbur-avamar:1.0.1-4216-centos7:
+      source_local: containerimages/ncd-product/cbur/cbur-avamar.1.0.1-4216-centos7.tar
+      source_registry: ""
+      source_image: ""
+      repository: cbur/cbur-avamar
+      version: 1.0.1-4216-centos7
+    ncd-product/cbur/cbur-cli:1.0.3-4164:
+      source_local: containerimages/ncd-product/cbur/cbur-cli.1.0.3-4164.tar
+      source_registry: ""
+      source_image: ""
+      repository: cbur/cbur-cli
+      version: 1.0.3-4164
+    ncd-product/cbur/cbura:1.0.3-3733:
+      source_local: containerimages/ncd-product/cbur/cbura.1.0.3-3733.tar
+      source_registry: ""
+      source_image: ""
+      repository: cbur/cbura
+      version: 1.0.3-3733
+    ncd-product/cbur/cbura:1.0.3-4164:
+      source_local: containerimages/ncd-product/cbur/cbura.1.0.3-4164.tar
+      source_registry: ""
+      source_image: ""
+      repository: cbur/cbura
+      version: 1.0.3-4164
+    ncd-product/cbur/cbura:1.0.3-4538:
+      source_local: containerimages/ncd-product/cbur/cbura.1.0.3-4538.tar
+      source_registry: ""
+      source_image: ""
+      repository: cbur/cbura
+      version: 1.0.3-4538
+    ncd-product/cbur/cbura:1.0.3-5180:
+      source_local: containerimages/ncd-product/cbur/cbura.1.0.3-5180.tar
+      source_registry: ""
+      source_image: ""
+      repository: cbur/cbura
+      version: 1.0.3-5180
+    ncd-product/cbur/cbura:1.0.3-5650:
+      source_local: containerimages/ncd-product/cbur/cbura.1.0.3-5650.tar
+      source_registry: ""
+      source_image: ""
+      repository: cbur/cbura
+      version: 1.0.3-5650
+    ncd-product/cbur/cburm:1.10.0-4828:
+      source_local: containerimages/ncd-product/cbur/cburm.1.10.0-4828.tar
+      source_registry: ""
+      source_image: ""
+      repository: cbur/cburm
+      version: 1.10.0-4828
+    ncd-product/cbur/cburm:1.10.0-4828-centos7:
+      source_local: containerimages/ncd-product/cbur/cburm.1.10.0-4828-centos7.tar
+      source_registry: ""
+      source_image: ""
+      repository: cbur/cburm
+      version: 1.10.0-4828-centos7
+    ncd-product/cctf/cctf-jenkins-agent:1.0.0-20230615:
+      source_local: containerimages/ncd-product/cctf/cctf-jenkins-agent.1.0.0-20230615.tar
+      source_registry: ""
+      source_image: ""
+      repository: cctf/cctf-jenkins-agent
+      version: 1.0.0-20230615
+    ncd-product/cctf/cctf-jenkins:1.1.0-20230807:
+      source_local: containerimages/ncd-product/cctf/cctf-jenkins.1.1.0-20230807.tar
+      source_registry: ""
+      source_image: ""
+      repository: cctf/cctf-jenkins
+      version: 1.1.0-20230807
+    ncd-product/cctf/cctf-tools:1.0.0-20230615:
+      source_local: containerimages/ncd-product/cctf/cctf-tools.1.0.0-20230615.tar
+      source_registry: ""
+      source_image: ""
+      repository: cctf/cctf-tools
+      version: 1.0.0-20230615
+    ncd-product/cctf/cctf:1.0-3464:
+      source_local: containerimages/ncd-product/cctf/cctf.1.0-3464.tar
+      source_registry: ""
+      source_image: ""
+      repository: cctf/cctf
+      version: 1.0-3464
+    ncd-product/cds-engine:23.6.1-11.gaf36fc4:
+      source_local: containerimages/ncd-product/cds-engine.23.6.1-11.gaf36fc4.tar
+      source_registry: ""
+      source_image: ""
+      repository: cds-engine
+      version: 23.6.1-11.gaf36fc4
+    ncd-product/cds-worker:23.6.1-11.gaf36fc4:
+      source_local: containerimages/ncd-product/cds-worker.23.6.1-11.gaf36fc4.tar
+      source_registry: ""
+      source_image: ""
+      repository: cds-worker
+      version: 23.6.1-11.gaf36fc4
+    ncd-product/char/harbor-chartmuseum:v0.15.0-v2.7.2-char.1:
+      source_local: containerimages/ncd-product/char/harbor-chartmuseum.v0.15.0-v2.7.2-char.1.tar
+      source_registry: ""
+      source_image: ""
+      repository: char/harbor-chartmuseum
+      version: v0.15.0-v2.7.2-char.1
+    ncd-product/char/harbor-core:v2.7.2-char.1:
+      source_local: containerimages/ncd-product/char/harbor-core.v2.7.2-char.1.tar
+      source_registry: ""
+      source_image: ""
+      repository: char/harbor-core
+      version: v2.7.2-char.1
+    ncd-product/char/harbor-db:v2.7.2-13.11-char.1:
+      source_local: containerimages/ncd-product/char/harbor-db.v2.7.2-13.11-char.1.tar
+      source_registry: ""
+      source_image: ""
+      repository: char/harbor-db
+      version: v2.7.2-13.11-char.1
+    ncd-product/char/harbor-registryctl:v2.8.2-v2.7.2-char.1:
+      source_local: containerimages/ncd-product/char/harbor-registryctl.v2.8.2-v2.7.2-char.1.tar
+      source_registry: ""
+      source_image: ""
+      repository: char/harbor-registryctl
+      version: v2.8.2-v2.7.2-char.1
+    ncd-product/char/harbor-trivy-adapter:v0.40.0-v2.7.2-char.1:
+      source_local: containerimages/ncd-product/char/harbor-trivy-adapter.v0.40.0-v2.7.2-char.1.tar
+      source_registry: ""
+      source_image: ""
+      repository: char/harbor-trivy-adapter
+      version: v0.40.0-v2.7.2-char.1
+    ncd-product/char/migratechart:v2.7.2-char.1:
+      source_local: containerimages/ncd-product/char/migratechart.v2.7.2-char.1.tar
+      source_registry: ""
+      source_image: ""
+      repository: char/migratechart
+      version: v2.7.2-char.1
+    ncd-product/char/stunnel:v2.7.2-69-char.1:
+      source_local: containerimages/ncd-product/char/stunnel.v2.7.2-69-char.1.tar
+      source_registry: ""
+      source_image: ""
+      repository: char/stunnel
+      version: v2.7.2-69-char.1
+    ncd-product/cist/cist-istio-cni:1.16.3:
+      source_local: containerimages/ncd-product/cist/cist-istio-cni.1.16.3.tar
+      source_registry: ""
+      source_image: ""
+      repository: cist/cist-istio-cni
+      version: 1.16.3
+    ncd-product/cist/cist-istio-pilot:1.16.3:
+      source_local: containerimages/ncd-product/cist/cist-istio-pilot.1.16.3.tar
+      source_registry: ""
+      source_image: ""
+      repository: cist/cist-istio-pilot
+      version: 1.16.3
+    ncd-product/cist/cist-istio-proxytproxy:1.16.3:
+      source_local: containerimages/ncd-product/cist/cist-istio-proxytproxy.1.16.3.tar
+      source_registry: ""
+      source_image: ""
+      repository: cist/cist-istio-proxytproxy
+      version: 1.16.3
+    ncd-product/cist/cist-istio-proxyv2:1.16.3:
+      source_local: containerimages/ncd-product/cist/cist-istio-proxyv2.1.16.3.tar
+      source_registry: ""
+      source_image: ""
+      repository: cist/cist-istio-proxyv2
+      version: 1.16.3
+    ncd-product/cist/cist-istio-toolbox:1.16.3:
+      source_local: containerimages/ncd-product/cist/cist-istio-toolbox.1.16.3.tar
+      source_registry: ""
+      source_image: ""
+      repository: cist/cist-istio-toolbox
+      version: 1.16.3
+    ncd-product/citm/citm-default-backend:4.0.4-17.5:
+      source_local: containerimages/ncd-product/citm/citm-default-backend.4.0.4-17.5.tar
+      source_registry: ""
+      source_image: ""
+      repository: citm/citm-default-backend
+      version: 4.0.4-17.5
+    ncd-product/citm/citm-nginx-ingress:1.24.0-1.0.4-1.0.0-rocky8:
+      source_local: containerimages/ncd-product/citm/citm-nginx-ingress.1.24.0-1.0.4-1.0.0-rocky8.tar
+      source_registry: ""
+      source_image: ""
+      repository: citm/citm-nginx-ingress
+      version: 1.24.0-1.0.4-1.0.0-rocky8
+    ncd-product/citm/citm-nginx-server:1.22.1-1.3.0-1.0.2-rocky8:
+      source_local: containerimages/ncd-product/citm/citm-nginx-server.1.22.1-1.3.0-1.0.2-rocky8.tar
+      source_registry: ""
+      source_image: ""
+      repository: citm/citm-nginx-server
+      version: 1.22.1-1.3.0-1.0.2-rocky8
+    ncd-product/citm/citm-nginx-server:1.24.0-1.0.4-1.0.0:
+      source_local: containerimages/ncd-product/citm/citm-nginx-server.1.24.0-1.0.4-1.0.0.tar
+      source_registry: ""
+      source_image: ""
+      repository: citm/citm-nginx-server
+      version: 1.24.0-1.0.4-1.0.0
+    ncd-product/cmdb/admin:4.25-15.4961.el7:
+      source_local: containerimages/ncd-product/cmdb/admin.4.25-15.4961.el7.tar
+      source_registry: ""
+      source_image: ""
+      repository: cmdb/admin
+      version: 4.25-15.4961.el7
+    ncd-product/cmdb/admin:5.5-3.5369.el8:
+      source_local: containerimages/ncd-product/cmdb/admin.5.5-3.5369.el8.tar
+      source_registry: ""
+      source_image: ""
+      repository: cmdb/admin
+      version: 5.5-3.5369.el8
+    ncd-product/cmdb/admin:5.7-1.5448.el8:
+      source_local: containerimages/ncd-product/cmdb/admin.5.7-1.5448.el8.tar
+      source_registry: ""
+      source_image: ""
+      repository: cmdb/admin
+      version: 5.7-1.5448.el8
+    ncd-product/cmdb/mariadb:4.25-15.4961.el7:
+      source_local: containerimages/ncd-product/cmdb/mariadb.4.25-15.4961.el7.tar
+      source_registry: ""
+      source_image: ""
+      repository: cmdb/mariadb
+      version: 4.25-15.4961.el7
+    ncd-product/cmdb/mariadb:5.5-3.5369.el8:
+      source_local: containerimages/ncd-product/cmdb/mariadb.5.5-3.5369.el8.tar
+      source_registry: ""
+      source_image: ""
+      repository: cmdb/mariadb
+      version: 5.5-3.5369.el8
+    ncd-product/cmdb/mariadb:5.7-1.5448.el8:
+      source_local: containerimages/ncd-product/cmdb/mariadb.5.7-1.5448.el8.tar
+      source_registry: ""
+      source_image: ""
+      repository: cmdb/mariadb
+      version: 5.7-1.5448.el8
+    ncd-product/cmdb/maxctrl-exporter:0.1.0-21.256.el8:
+      source_local: containerimages/ncd-product/cmdb/maxctrl-exporter.0.1.0-21.256.el8.tar
+      source_registry: ""
+      source_image: ""
+      repository: cmdb/maxctrl-exporter
+      version: 0.1.0-21.256.el8
+    ncd-product/cmdb/maxscale-exporter:0.2.2-2.28.el7:
+      source_local: containerimages/ncd-product/cmdb/maxscale-exporter.0.2.2-2.28.el7.tar
+      source_registry: ""
+      source_image: ""
+      repository: cmdb/maxscale-exporter
+      version: 0.2.2-2.28.el7
+    ncd-product/cmdb/maxscale:4.25-15.4961.el7:
+      source_local: containerimages/ncd-product/cmdb/maxscale.4.25-15.4961.el7.tar
+      source_registry: ""
+      source_image: ""
+      repository: cmdb/maxscale
+      version: 4.25-15.4961.el7
+    ncd-product/cmdb/maxscale:5.7-1.5448.el8:
+      source_local: containerimages/ncd-product/cmdb/maxscale.5.7-1.5448.el8.tar
+      source_registry: ""
+      source_image: ""
+      repository: cmdb/maxscale
+      version: 5.7-1.5448.el8
+    ncd-product/cmdb/mysqld-exporter:0.14.0-11.256.el8:
+      source_local: containerimages/ncd-product/cmdb/mysqld-exporter.0.14.0-11.256.el8.tar
+      source_registry: ""
+      source_image: ""
+      repository: cmdb/mysqld-exporter
+      version: 0.14.0-11.256.el8
+    ncd-product/cpro-gen3gppxml-rocky:4.0.0-2.0.0-1899:
+      source_local: containerimages/ncd-product/cpro-gen3gppxml-rocky.4.0.0-2.0.0-1899.tar
+      source_registry: ""
+      source_image: ""
+      repository: cpro-gen3gppxml-rocky
+      version: 4.0.0-2.0.0-1899
+    ncd-product/cpro/registry4/prometheus-distro:2.0.0-1899:
+      source_local: containerimages/ncd-product/cpro/registry4/prometheus-distro.2.0.0-1899.tar
+      source_registry: ""
+      source_image: ""
+      repository: cpro/registry4/prometheus-distro
+      version: 2.0.0-1899
+    ncd-product/cpro/registry4/prometheus-python-rocky:2.0.0-1899:
+      source_local: containerimages/ncd-product/cpro/registry4/prometheus-python-rocky.2.0.0-1899.tar
+      source_registry: ""
+      source_image: ""
+      repository: cpro/registry4/prometheus-python-rocky
+      version: 2.0.0-1899
+    ncd-product/cpro/registry4/prometheus-restapi-rocky:4.0.0-4.0.0-1899:
+      source_local: containerimages/ncd-product/cpro/registry4/prometheus-restapi-rocky.4.0.0-4.0.0-1899.tar
+      source_registry: ""
+      source_image: ""
+      repository: cpro/registry4/prometheus-restapi-rocky
+      version: 4.0.0-4.0.0-1899
+    ncd-product/crdb/admin:5.1-1.3589.el8:
+      source_local: containerimages/ncd-product/crdb/admin.5.1-1.3589.el8.tar
+      source_registry: ""
+      source_image: ""
+      repository: crdb/admin
+      version: 5.1-1.3589.el8
+    ncd-product/crdb/redisio:4.5-7.3513.el8:
+      source_local: containerimages/ncd-product/crdb/redisio.4.5-7.3513.el8.tar
+      source_registry: ""
+      source_image: ""
+      repository: crdb/redisio
+      version: 4.5-7.3513.el8
+    ncd-product/crdb/redisio:5.1-1.3589.el8:
+      source_local: containerimages/ncd-product/crdb/redisio.5.1-1.3589.el8.tar
+      source_registry: ""
+      source_image: ""
+      repository: crdb/redisio
+      version: 5.1-1.3589.el8
+    ncd-product/crdb/rolemon:5.1-1.3589.el8:
+      source_local: containerimages/ncd-product/crdb/rolemon.5.1-1.3589.el8.tar
+      source_registry: ""
+      source_image: ""
+      repository: crdb/rolemon
+      version: 5.1-1.3589.el8
+    ncd-product/crmq-test/rabbitmq-test/rocky8:20230628162717909-2035:
+      source_local: containerimages/ncd-product/crmq-test/rabbitmq-test/rocky8.20230628162717909-2035.tar
+      source_registry: ""
+      source_image: ""
+      repository: crmq-test/rabbitmq-test/rocky8
+      version: 20230628162717909-2035
+    ncd-product/crmq/rabbitmq/rocky8:2.3.0-3.11.18-2035:
+      source_local: containerimages/ncd-product/crmq/rabbitmq/rocky8.2.3.0-3.11.18-2035.tar
+      source_registry: ""
+      source_image: ""
+      repository: crmq/rabbitmq/rocky8
+      version: 2.3.0-3.11.18-2035
+    ncd-product/csec/jetstack/cert-manager-acmesolver:v1.12.1:
+      source_local: containerimages/ncd-product/csec/jetstack/cert-manager-acmesolver.v1.12.1.tar
+      source_registry: ""
+      source_image: ""
+      repository: csec/jetstack/cert-manager-acmesolver
+      version: v1.12.1
+    ncd-product/csec/jetstack/cert-manager-cainjector:v1.12.1:
+      source_local: containerimages/ncd-product/csec/jetstack/cert-manager-cainjector.v1.12.1.tar
+      source_registry: ""
+      source_image: ""
+      repository: csec/jetstack/cert-manager-cainjector
+      version: v1.12.1
+    ncd-product/csec/jetstack/cert-manager-controller:v1.12.1:
+      source_local: containerimages/ncd-product/csec/jetstack/cert-manager-controller.v1.12.1.tar
+      source_registry: ""
+      source_image: ""
+      repository: csec/jetstack/cert-manager-controller
+      version: v1.12.1
+    ncd-product/csec/jetstack/cert-manager-ctl:v1.12.1:
+      source_local: containerimages/ncd-product/csec/jetstack/cert-manager-ctl.v1.12.1.tar
+      source_registry: ""
+      source_image: ""
+      repository: csec/jetstack/cert-manager-ctl
+      version: v1.12.1
+    ncd-product/csec/jetstack/cert-manager-webhook:v1.12.1:
+      source_local: containerimages/ncd-product/csec/jetstack/cert-manager-webhook.v1.12.1.tar
+      source_registry: ""
+      source_image: ""
+      repository: csec/jetstack/cert-manager-webhook
+      version: v1.12.1
+    ncd-product/devops/cctf-ncd-robot:23.6.0-20-g4f2116b:
+      source_local: containerimages/ncd-product/devops/cctf-ncd-robot.23.6.0-20-g4f2116b.tar
+      source_registry: ""
+      source_image: ""
+      repository: devops/cctf-ncd-robot
+      version: 23.6.0-20-g4f2116b
+    ncd-product/gitlab-org/build/cng/certificates:v16.1.2-ubi8:
+      source_local: containerimages/ncd-product/gitlab-org/build/cng/certificates.v16.1.2-ubi8.tar
+      source_registry: ""
+      source_image: ""
+      repository: gitlab-org/build/cng/certificates
+      version: v16.1.2-ubi8
+    ncd-product/gitlab-org/build/cng/cfssl-self-sign:v16.1.2-ubi8:
+      source_local: containerimages/ncd-product/gitlab-org/build/cng/cfssl-self-sign.v16.1.2-ubi8.tar
+      source_registry: ""
+      source_image: ""
+      repository: gitlab-org/build/cng/cfssl-self-sign
+      version: v16.1.2-ubi8
+    ncd-product/gitlab-org/build/cng/gitaly:v16.1.2-ubi8:
+      source_local: containerimages/ncd-product/gitlab-org/build/cng/gitaly.v16.1.2-ubi8.tar
+      source_registry: ""
+      source_image: ""
+      repository: gitlab-org/build/cng/gitaly
+      version: v16.1.2-ubi8
+    ncd-product/gitlab-org/build/cng/gitlab-base:v16.1.2-ubi8:
+      source_local: containerimages/ncd-product/gitlab-org/build/cng/gitlab-base.v16.1.2-ubi8.tar
+      source_registry: ""
+      source_image: ""
+      repository: gitlab-org/build/cng/gitlab-base
+      version: v16.1.2-ubi8
+    ncd-product/gitlab-org/build/cng/gitlab-shell:v16.1.2-ubi8:
+      source_local: containerimages/ncd-product/gitlab-org/build/cng/gitlab-shell.v16.1.2-ubi8.tar
+      source_registry: ""
+      source_image: ""
+      repository: gitlab-org/build/cng/gitlab-shell
+      version: v16.1.2-ubi8
+    ncd-product/gitlab-org/build/cng/gitlab-sidekiq-ce:v16.1.2:
+      source_local: containerimages/ncd-product/gitlab-org/build/cng/gitlab-sidekiq-ce.v16.1.2.tar
+      source_registry: ""
+      source_image: ""
+      repository: gitlab-org/build/cng/gitlab-sidekiq-ce
+      version: v16.1.2
+    ncd-product/gitlab-org/build/cng/gitlab-toolbox-ce:v16.1.2:
+      source_local: containerimages/ncd-product/gitlab-org/build/cng/gitlab-toolbox-ce.v16.1.2.tar
+      source_registry: ""
+      source_image: ""
+      repository: gitlab-org/build/cng/gitlab-toolbox-ce
+      version: v16.1.2
+    ncd-product/gitlab-org/build/cng/gitlab-webservice-ce:v16.1.2:
+      source_local: containerimages/ncd-product/gitlab-org/build/cng/gitlab-webservice-ce.v16.1.2.tar
+      source_registry: ""
+      source_image: ""
+      repository: gitlab-org/build/cng/gitlab-webservice-ce
+      version: v16.1.2
+    ncd-product/gitlab-org/build/cng/gitlab-workhorse-ce:v16.1.2:
+      source_local: containerimages/ncd-product/gitlab-org/build/cng/gitlab-workhorse-ce.v16.1.2.tar
+      source_registry: ""
+      source_image: ""
+      repository: gitlab-org/build/cng/gitlab-workhorse-ce
+      version: v16.1.2
+    ncd-product/gitlab-org/build/cng/kubectl:v16.1.2-ubi8:
+      source_local: containerimages/ncd-product/gitlab-org/build/cng/kubectl.v16.1.2-ubi8.tar
+      source_registry: ""
+      source_image: ""
+      repository: gitlab-org/build/cng/kubectl
+      version: v16.1.2-ubi8
+    ncd-product/helloworld_go:1.0.6:
+      source_local: containerimages/ncd-product/helloworld_go.1.0.6.tar
+      source_registry: ""
+      source_image: ""
+      repository: helloworld_go
+      version: 1.0.6
+    ncd-product/helloworld_go:1.0.7:
+      source_local: containerimages/ncd-product/helloworld_go.1.0.7.tar
+      source_registry: ""
+      source_image: ""
+      repository: helloworld_go
+      version: 1.0.7
+    ncd-product/keycloak/cent8/keycloak-ha-cent8:19.0.3-3-460:
+      source_local: containerimages/ncd-product/keycloak/cent8/keycloak-ha-cent8.19.0.3-3-460.tar
+      source_registry: ""
+      source_image: ""
+      repository: keycloak/cent8/keycloak-ha-cent8
+      version: 19.0.3-3-460
+    ncd-product/ncd-azure/azure-agent:23.6.1-387.g0f02c89:
+      source_local: containerimages/ncd-product/ncd-azure/azure-agent.23.6.1-387.g0f02c89.tar
+      source_registry: ""
+      source_image: ""
+      repository: ncd-azure/azure-agent
+      version: 23.6.1-387.g0f02c89
+    ncd-product/ncd-cds-worker:23.6.1-11.gaf36fc4:
+      source_local: containerimages/ncd-product/ncd-cds-worker.23.6.1-11.gaf36fc4.tar
+      source_registry: ""
+      source_image: ""
+      repository: ncd-cds-worker
+      version: 23.6.1-11.gaf36fc4
+    ncd-product/ncd/ncd-engine-backup-utils:23.6.1-476.g68d1db70:
+      source_local: containerimages/ncd-product/ncd/ncd-engine-backup-utils.23.6.1-476.g68d1db70.tar
+      source_registry: ""
+      source_image: ""
+      repository: ncd/ncd-engine-backup-utils
+      version: 23.6.1-476.g68d1db70
+    ncd-product/ncd/ncd-engine:23.6.1-476.g68d1db70:
+      source_local: containerimages/ncd-product/ncd/ncd-engine.23.6.1-476.g68d1db70.tar
+      source_registry: ""
+      source_image: ""
+      repository: ncd/ncd-engine
+      version: 23.6.1-476.g68d1db70
+    ncd-product/ncd/ncd-harbor-admin:23.6.1-53.g7729943:
+      source_local: containerimages/ncd-product/ncd/ncd-harbor-admin.23.6.1-53.g7729943.tar
+      source_registry: ""
+      source_image: ""
+      repository: ncd/ncd-harbor-admin
+      version: 23.6.1-53.g7729943
+    ncd-product/ncd/ncd-logstore:23.6.1-7.gaa981d6:
+      source_local: containerimages/ncd-product/ncd/ncd-logstore.23.6.1-7.gaa981d6.tar
+      source_registry: ""
+      source_image: ""
+      repository: ncd/ncd-logstore
+      version: 23.6.1-7.gaa981d6
+    ncd-product/ncd/ncd-logstream:23.6.1-7.gaa981d6:
+      source_local: containerimages/ncd-product/ncd/ncd-logstream.23.6.1-7.gaa981d6.tar
+      source_registry: ""
+      source_image: ""
+      repository: ncd/ncd-logstream
+      version: 23.6.1-7.gaa981d6
+    ncd-product/ncd/ncd-monitoring:23.6.1-53.g7729943:
+      source_local: containerimages/ncd-product/ncd/ncd-monitoring.23.6.1-53.g7729943.tar
+      source_registry: ""
+      source_image: ""
+      repository: ncd/ncd-monitoring
+      version: 23.6.1-53.g7729943
+    ncd-product/ncd/ncd-utilities:23.6.1-53.g7729943:
+      source_local: containerimages/ncd-product/ncd/ncd-utilities.23.6.1-53.g7729943.tar
+      source_registry: ""
+      source_image: ""
+      repository: ncd/ncd-utilities
+      version: 23.6.1-53.g7729943
+    ncd-product/ncd/stolon-init-db:23.6.1-53.g7729943:
+      source_local: containerimages/ncd-product/ncd/stolon-init-db.23.6.1-53.g7729943.tar
+      source_registry: ""
+      source_image: ""
+      repository: ncd/stolon-init-db
+      version: 23.6.1-53.g7729943
+    ncd-product/ncd/stolon:23.6.1-53.g7729943:
+      source_local: containerimages/ncd-product/ncd/stolon.23.6.1-53.g7729943.tar
+      source_registry: ""
+      source_image: ""
+      repository: ncd/stolon
+      version: 23.6.1-53.g7729943
+    ncd-product/ntf/executor:23.6.1-1947.gfab8446:
+      source_local: containerimages/ncd-product/ntf/executor.23.6.1-1947.gfab8446.tar
+      source_registry: ""
+      source_image: ""
+      repository: ntf/executor
+      version: 23.6.1-1947.gfab8446
+    ncd-product/ntf/tools:23.6.1-1947.gfab8446:
+      source_local: containerimages/ncd-product/ntf/tools.23.6.1-1947.gfab8446.tar
+      source_registry: ""
+      source_image: ""
+      repository: ntf/tools
+      version: 23.6.1-1947.gfab8446
+    ncd-product/ofd_f_rocky8_jdk11:1.14.6-2209.1.0:
+      source_local: containerimages/ncd-product/ofd_f_rocky8_jdk11.1.14.6-2209.1.0.tar
+      source_registry: ""
+      source_image: ""
+      repository: ofd_f_rocky8_jdk11
+      version: 1.14.6-2209.1.0
+    ncd-product/ofd_f_rocky8_jdk11:1.15.3-2209.3.0:
+      source_local: containerimages/ncd-product/ofd_f_rocky8_jdk11.1.15.3-2209.3.0.tar
+      source_registry: ""
+      source_image: ""
+      repository: ofd_f_rocky8_jdk11
+      version: 1.15.3-2209.3.0
+    ncd-product/ofd_init_rocky8_jdk11:1.0.0-2209.1.0:
+      source_local: containerimages/ncd-product/ofd_init_rocky8_jdk11.1.0.0-2209.1.0.tar
+      source_registry: ""
+      source_image: ""
+      repository: ofd_init_rocky8_jdk11
+      version: 1.0.0-2209.1.0
+    ncd-product/ofd_init_rocky8_jdk11:1.0.0-2209.3.0:
+      source_local: containerimages/ncd-product/ofd_init_rocky8_jdk11.1.0.0-2209.3.0.tar
+      source_registry: ""
+      source_image: ""
+      repository: ofd_init_rocky8_jdk11
+      version: 1.0.0-2209.3.0
+    ncd-product/oliver006/redis_exporter:v1.49.0:
+      source_local: containerimages/ncd-product/oliver006/redis_exporter.v1.49.0.tar
+      source_registry: ""
+      source_image: ""
+      repository: oliver006/redis_exporter
+      version: v1.49.0
+    ncd-product/osdb/leader-elector:4.6-8.53:
+      source_local: containerimages/ncd-product/osdb/leader-elector.4.6-8.53.tar
+      source_registry: ""
+      source_image: ""
+      repository: osdb/leader-elector
+      version: 4.6-8.53
+    ncd-product/prom/mysqld-exporter:v0.12.1:
+      source_local: containerimages/ncd-product/prom/mysqld-exporter.v0.12.1.tar
+      source_registry: ""
+      source_image: ""
+      repository: prom/mysqld-exporter
+      version: v0.12.1
+    ncd-product/tools/centos/kubectl:v1.25.10-nano-20230602:
+      source_local: containerimages/ncd-product/tools/centos/kubectl.v1.25.10-nano-20230602.tar
+      source_registry: ""
+      source_image: ""
+      repository: tools/centos/kubectl
+      version: v1.25.10-nano-20230602
+    ncd-product/tools/kubectl:v1.24.2-nano-20220627:
+      source_local: containerimages/ncd-product/tools/kubectl.v1.24.2-nano-20220627.tar
+      source_registry: ""
+      source_image: ""
+      repository: tools/kubectl
+      version: v1.24.2-nano-20220627
+    ncd-product/tools/kubectl:v1.25.4-nano-20221125:
+      source_local: containerimages/ncd-product/tools/kubectl.v1.25.4-nano-20221125.tar
+      source_registry: ""
+      source_image: ""
+      repository: tools/kubectl
+      version: v1.25.4-nano-20221125
+    ncd-product/tools/kubectl:v1.25.4-rocky-nano-20221125:
+      source_local: containerimages/ncd-product/tools/kubectl.v1.25.4-rocky-nano-20221125.tar
+      source_registry: ""
+      source_image: ""
+      repository: tools/kubectl
+      version: v1.25.4-rocky-nano-20221125
+    ncd-product/tools/kubectl:v1.25.9-rocky-nano-20230428:
+      source_local: containerimages/ncd-product/tools/kubectl.v1.25.9-rocky-nano-20230428.tar
+      source_registry: ""
+      source_image: ""
+      repository: tools/kubectl
+      version: v1.25.9-rocky-nano-20230428
+    ncd-product/tools/kubectl:v1.25.10-rocky-nano-20230602:
+      source_local: containerimages/ncd-product/tools/kubectl.v1.25.10-rocky-nano-20230602.tar
+      source_registry: ""
+      source_image: ""
+      repository: tools/kubectl
+      version: v1.25.10-rocky-nano-20230602
+    ncd-product/tools/kubectl:v1.26.5-rocky-nano-20230602:
+      source_local: containerimages/ncd-product/tools/kubectl.v1.26.5-rocky-nano-20230602.tar
+      source_registry: ""
+      source_image: ""
+      repository: tools/kubectl
+      version: v1.26.5-rocky-nano-20230602
+    ncd-product/webdevops/azure-devops-exporter:23.2.0:
+      source_local: containerimages/ncd-product/webdevops/azure-devops-exporter.23.2.0.tar
+      source_registry: ""
+      source_image: ""
+      repository: webdevops/azure-devops-exporter
+      version: 23.2.0
